@@ -89,7 +89,7 @@ def dig_for_root():
 		while not os.path.ismount(root) and root != os.path.dirname(root):
 			root = os.path.dirname(root)
 
-		for f in ["SafeB9S.bin", "b9", "boot.firm", "boot.3dsx", "boot9strap/", "mset9.py", "MSET9-Windows.bat", "MSET9-macOS.command", "_INSTRUCTIONS.txt", "errors.txt"]:
+		for f in ["SafeB9S.bin", "b9", "boot.firm", "boot.3dsx", "config/", "mset9.py", "MSET9-Windows.bat", "MSET9-macOS.command", "_INSTRUCTIONS.txt", "errors.txt"]:
 			try:
 				shutil.move(os.path.join(scriptroot, f), os.path.join(root, f))
 			except:
@@ -897,7 +897,7 @@ writeProtectCheck()
 prinfo("Ensuring extracted files exist...")
 
 fileSanity = 0
-fileSanity += softcheck("boot9strap/boot9strap.firm", crc32=0x08129C1F)
+# fileSanity += softcheck("boot9strap/boot9strap.firm", crc32=0x08129C1F)
 fileSanity += softcheck("boot.firm")
 fileSanity += softcheck("boot.3dsx")
 fileSanity += softcheck("b9")
