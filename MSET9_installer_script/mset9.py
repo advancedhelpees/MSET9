@@ -649,7 +649,7 @@ consoleNames = {
 #	4: "New 3DS/2DS, 11.4.0 to 11.7.0"
 }
 
-print("Enter one of these " + len(consoleNames) + " numbers!")
+print("Enter one of these", len(consoleNames), "numbers!")
 for i in consoleNames:
 	print(f"Enter {i} for: {consoleNames[i]}")
 
