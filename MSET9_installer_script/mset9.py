@@ -649,7 +649,7 @@ consoleNames = {
 #	4: "New 3DS/2DS, 11.4.0 to 11.7.0"
 }
 
-print("Enter one of these four numbers!")
+print("Enter one of these", len(consoleNames), "numbers!")
 for i in consoleNames:
 	print(f"Enter {i} for: {consoleNames[i]}")
 
@@ -665,7 +665,7 @@ encodedID1s = {
 #	4: "FFFFFFFA119907488546696508A10122054B984768465946C0AA171C4346034CA047B84700900A08459E050881CC0408730064006D00630000900A0862003900"
 }
 
-consoleIndex = getInput(range(1, 4))
+consoleIndex = getInput(range(1, len(consoleNames)))
 if consoleIndex < 0:
 	prgood("Goodbye!")
 	exitOnEnter(remount=True)
