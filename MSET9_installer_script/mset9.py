@@ -89,7 +89,7 @@ def dig_for_root():
 		while not os.path.ismount(root) and root != os.path.dirname(root):
 			root = os.path.dirname(root)
 
-		for f in ["SafeB9S.bin", "b9", "boot.firm", "boot.3dsx", "config/", "mset9.py", "MSET9-Windows.bat", "MSET9-macOS.command", "_INSTRUCTIONS.txt", "errors.txt"]:
+		for f in ["JustB9S.bin", "b9", "boot.firm", "boot.3dsx", "config/", "mset9.py", "MSET9-Windows.bat", "MSET9-macOS.command", "_INSTRUCTIONS.txt", "errors.txt"]:
 			try:
 				shutil.move(os.path.join(scriptroot, f), os.path.join(root, f))
 			except:
@@ -901,7 +901,7 @@ fileSanity = 0
 fileSanity += softcheck("boot.firm")
 fileSanity += softcheck("boot.3dsx")
 fileSanity += softcheck("b9")
-fileSanity += softcheck("SafeB9S.bin")
+fileSanity += softcheck("JustB9S.bin")
 
 if fileSanity > 0:
 	prbad("Error 07: One or more files are missing or malformed!")
