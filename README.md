@@ -12,9 +12,9 @@ This is an ARM9 primary exploit for 3DS that can be launched with only filename 
 In short, zoogie magic. For the long form, see [here](README_old.md)
 
 ## Requirements
--- An Old or New 3DS/2DS, 11.8-11.17 any region
--- A USB to SD reader
--- Windows/MAC/Linux PC
+-- An Old or New 3DS/2DS, 11.8-11.17 any region<br>
+-- A USB to SD reader<br>
+-- Windows/MAC/Linux PC<br>
 
 ## Directions
 TBD
